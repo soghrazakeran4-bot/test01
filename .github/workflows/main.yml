@@ -34,7 +34,7 @@ jobs:
       - name: Create RDP User with Custom Password
         run: |
           # Set Custom Credentials
-          $password = "123"
+          $password = "SpoilersHub0"
           $securePass = ConvertTo-SecureString $password -AsPlainText -Force
           
           New-LocalUser -Name "RDP" -Password $securePass -AccountNeverExpires
